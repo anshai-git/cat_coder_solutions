@@ -1,8 +1,6 @@
-import lombok.var;
-
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,7 +19,8 @@ public class Scratch {
 //		final String input = "F 1 200 F 2 170 B 1 200 B 2 100"; //"F 1 386 F 2 963 F 3 374 F 4 371 F 5 685 F 6 47 F 7 132 F 8 909 F 9 433 B 1 386 B 2 963 B 3 374 B 4 371 B 5 685 B 6 47 B 7 132 B 8 909 B 9 71";
 //		F 1 200 F 2 170 B 1 200 B 2 100
 //		F 1 439 F 2 605 F 3 476 F 4 765 F 5 382 F 6 599 F 7 732 F 8 21 F 9 617 B 1 248 B 2 605 B 3 476 B 4 765 B 5 382 B 6 599 B 7 732 B 8 21 B 9 617
-		System.out.println("1- " + parse(input));
+//		System.out.println("1- " + parse(input));
+		calculateDays(input);
 //		parse_2(input);
 		//System.out.println("2- " + parse(input2));
 		//System.out.println("3- " + parse(input3));
@@ -55,7 +54,6 @@ public class Scratch {
 
 	private static List<Integer> parse(String input) {
 		final List<String> tokens = Arrays.asList(input.split(" "));
-		splitt(tokens);
 		final List<Integer> result = new ArrayList<>();
 
 		for(int i = 2; i < tokens.size()/2; i+=3) {
@@ -68,29 +66,34 @@ public class Scratch {
 		result.sort(Integer::compareTo);
 		return result;
 	}
-	 private static void splitt(List<String> input) {
-		 HashMap<String, List<List<String>>> varF = new HashMap<>();
-		 HashMap<String, List<List<String>>> varB = new HashMap<>();
-		 varF.put("F", new ArrayList());
-		 varF.put("B", new ArrayList());
-		 for(int i=0 ; i< input.size(); i++) {
-		 	if(input.get(i).equals("F")) {
-				List<String> valuesF = new ArrayList<>();
-				valuesF.add(input.get(i+1));
-				valuesF.add(input.get(i+2));
-//				varF.get("F").get(0).add(new ArrayList<String>(valuesF));
-				valuesF.clear();
-//		 		System.out.println(Arrays.asList(valuesF));
-			} else {
-				List<String> valuesB = new ArrayList<>();
-				valuesB.add(input.get(i + 1));
-				valuesB.add(input.get(i + 2));
-				varB.get("B").add(valuesB);
-				valuesB.clear();
+
+	private static void calculateDays(final String inputString) {
+		final List<String> input = Arrays.asList(inputString.split(" "));
+		HashMap<String, List<String>> varF = new HashMap<>();
+		HashMap<String, List<String>> varB = new HashMap<>();
+		varF.put("F", new ArrayList<>());
+		varB.put("B", new ArrayList<>());
+		for (int i = 0; i < input.size() - 2 ; i++) {
+			String currentValue = input.get(i + 1) + " " + input.get(i + 2);
+			if (input.get(i).equals("F")) {
+				varF.get("F").add(currentValue);
+			} else if (input.get(i).equals("B")) {
+				varB.get("B").add(currentValue);
 			}
-		 }
-		 System.out.println(varF);
-	 }
+		}
+		System.out.println(varF);
+		System.out.println(varB);
+		List<String> results = new ArrayList<>();
+		if (varF.get("F").size() == varB.get("B").size()) {
+			for (int i = 0; i < varF.get("F").size(); i++) {
+				if (Integer.valueOf(varF.get("F").get(i).substring(2).trim()) -
+						Integer.valueOf(varB.get("B").get(i).substring(2).trim()) != 0) {
+					results.add(String.valueOf(varF.get("F").get(i).substring(0, varF.get("F").get(i).indexOf(" "))));
+				}
+			}
+		}
+		System.out.println(results);
+	}
 
 
 	private void test (String[] req) {
