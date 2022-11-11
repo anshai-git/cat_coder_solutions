@@ -13,7 +13,6 @@ public class CustomFileReader {
         try {
             while (it.hasNext()) {
                 String line = it.nextLine();
-                // do something with line
                 System.out.println(line);
             }
         } finally {
