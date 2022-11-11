@@ -4,10 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0596b5-c7a2-4eea-a090-75ac70bbeb5b" name="Changes" comment="impl with lists &amp;&amp; map">
+    <list default="true" id="8e0596b5-c7a2-4eea-a090-75ac70bbeb5b" name="Changes" comment="hello">
+      <change afterPath="$PROJECT_DIR$/cat/level1_1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level1_2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level1_3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level1_4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level1_5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level1_example.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level2_1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level2_2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level2_3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level2_4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level2_5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level2_example.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_6.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_7.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/level3_example.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/src/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/src/GameResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/src/Ghost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/src/Level1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/src/Level2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat/src/Level3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat/src/CustomFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat/src/CustomFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-proj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test-proj.iml" afterDir="false" />
     </list>
@@ -15,6 +41,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -27,27 +60,48 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2H1eBoBnRnmIs6gi5azONSdVXqU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.CustomFileReader">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cat" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Level3">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="LiferayDockerServerConfiguration" factoryName="Liferay Docker Server">
       <option name="passParentEnvironments" value="true" />
       <option name="workspaceLocation" value="$PROJECT_DIR$" />
@@ -60,6 +114,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Level1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level1" />
+      <module name="test-proj" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level2" />
+      <module name="test-proj" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level3" />
+      <module name="test-proj" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scratch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Scratch" />
       <module name="cat_coder_solutions" />
@@ -67,32 +142,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="cat_coder_solutions" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="cat_coder_solutions" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Level3" />
+        <item itemvalue="Application.Level2" />
+        <item itemvalue="Application.Level1" />
         <item itemvalue="Application.CustomFileReader" />
         <item itemvalue="Application.Scratch" />
       </list>
@@ -144,7 +198,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="impl with lists &amp;&amp; map" />
